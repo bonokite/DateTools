@@ -24,6 +24,14 @@
 		901CF0F01B6CA9FE00F6414B /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CF0E01B6CA9FE00F6414B /* DTTimePeriodGroup.m */; };
 		901CF0F11B6CA9FE00F6414B /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 901CF0E11B6CA9FE00F6414B /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		901CF0F21B6CA9FE00F6414B /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CF0E21B6CA9FE00F6414B /* NSDate+DateTools.m */; };
+		917A66C61BBB013E00AD1549 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 901CF0D41B6CA9FE00F6414B /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917A66C71BBB014300AD1549 /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 901CF0D51B6CA9FE00F6414B /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917A66C81BBB014500AD1549 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 901CF0D71B6CA9FE00F6414B /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917A66C91BBB014800AD1549 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 901CF0D91B6CA9FE00F6414B /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917A66CA1BBB014A00AD1549 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 901CF0DB1B6CA9FE00F6414B /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917A66CB1BBB014E00AD1549 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 901CF0DD1B6CA9FE00F6414B /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917A66CC1BBB015000AD1549 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 901CF0DF1B6CA9FE00F6414B /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917A66CD1BBB015300AD1549 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 901CF0E11B6CA9FE00F6414B /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D935DB441B567FBD00BAA4F0 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D935DB431B567FBD00BAA4F0 /* DTConstants.m */; };
 		F007632018DE5F5E00A99075 /* DateToolsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F007631E18DE5F5E00A99075 /* DateToolsViewController.m */; };
 		F007632118DE5F5E00A99075 /* DateToolsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F007631F18DE5F5E00A99075 /* DateToolsViewController.xib */; };
@@ -91,6 +99,7 @@
 		901CF0E21B6CA9FE00F6414B /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
 		908837C91B637C240063096B /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		908837CC1B637C240063096B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917A66BE1BBB00AF00AD1549 /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D935DB431B567FBD00BAA4F0 /* DTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = ../../../DateTools/DTConstants.m; sourceTree = "<group>"; };
 		F007631D18DE5F5E00A99075 /* DateToolsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateToolsViewController.h; sourceTree = "<group>"; };
 		F007631E18DE5F5E00A99075 /* DateToolsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateToolsViewController.m; sourceTree = "<group>"; };
@@ -143,6 +152,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		908837C51B637C240063096B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917A66BA1BBB00AF00AD1549 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,6 +309,7 @@
 				F0F08D9B18D9E80E00214C6B /* DateToolsExample.app */,
 				F0F08DBC18D9E80E00214C6B /* DateToolsExampleTests.xctest */,
 				908837C91B637C240063096B /* DateTools.framework */,
+				917A66BE1BBB00AF00AD1549 /* DateTools.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -392,12 +409,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		917A66BB1BBB00AF00AD1549 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917A66CB1BBB014E00AD1549 /* DTTimePeriodCollection.h in Headers */,
+				917A66CD1BBB015300AD1549 /* NSDate+DateTools.h in Headers */,
+				917A66C81BBB014500AD1549 /* DTError.h in Headers */,
+				917A66C71BBB014300AD1549 /* DTConstants.h in Headers */,
+				917A66C91BBB014800AD1549 /* DTTimePeriod.h in Headers */,
+				917A66CA1BBB014A00AD1549 /* DTTimePeriodChain.h in Headers */,
+				917A66C61BBB013E00AD1549 /* DateTools.h in Headers */,
+				917A66CC1BBB015000AD1549 /* DTTimePeriodGroup.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		908837C81B637C240063096B /* DateTools */ = {
+		908837C81B637C240063096B /* DateTools-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 908837E01B637C240063096B /* Build configuration list for PBXNativeTarget "DateTools" */;
+			buildConfigurationList = 908837E01B637C240063096B /* Build configuration list for PBXNativeTarget "DateTools-iOS" */;
 			buildPhases = (
 				908837C41B637C240063096B /* Sources */,
 				908837C51B637C240063096B /* Frameworks */,
@@ -408,9 +440,27 @@
 			);
 			dependencies = (
 			);
-			name = DateTools;
+			name = "DateTools-iOS";
 			productName = DateTools;
 			productReference = 908837C91B637C240063096B /* DateTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		917A66BD1BBB00AF00AD1549 /* DateTools-WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 917A66C51BBB00AF00AD1549 /* Build configuration list for PBXNativeTarget "DateTools-WatchOS" */;
+			buildPhases = (
+				917A66B91BBB00AF00AD1549 /* Sources */,
+				917A66BA1BBB00AF00AD1549 /* Frameworks */,
+				917A66BB1BBB00AF00AD1549 /* Headers */,
+				917A66BC1BBB00AF00AD1549 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DateTools-WatchOS";
+			productName = "DateTools-WatchOS";
+			productReference = 917A66BE1BBB00AF00AD1549 /* DateTools.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F0F08D9A18D9E80E00214C6B /* DateToolsExample */ = {
@@ -454,10 +504,13 @@
 		F0F08D9318D9E80E00214C6B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					908837C81B637C240063096B = {
 						CreatedOnToolsVersion = 6.4;
+					};
+					917A66BD1BBB00AF00AD1549 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 					F0F08DBB18D9E80E00214C6B = {
 						TestTargetID = F0F08D9A18D9E80E00214C6B;
@@ -479,7 +532,8 @@
 			targets = (
 				F0F08D9A18D9E80E00214C6B /* DateToolsExample */,
 				F0F08DBB18D9E80E00214C6B /* DateToolsExampleTests */,
-				908837C81B637C240063096B /* DateTools */,
+				908837C81B637C240063096B /* DateTools-iOS */,
+				917A66BD1BBB00AF00AD1549 /* DateTools-WatchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -490,6 +544,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				901CF0E31B6CA9FE00F6414B /* DateTools.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917A66BC1BBB00AF00AD1549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +596,13 @@
 				901CF0E61B6CA9FE00F6414B /* DTConstants.m in Sources */,
 				901CF0F21B6CA9FE00F6414B /* NSDate+DateTools.m in Sources */,
 				901CF0EC1B6CA9FE00F6414B /* DTTimePeriodChain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917A66B91BBB00AF00AD1549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +669,7 @@
 		908837DC1B637C240063096B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -616,21 +685,23 @@
 				);
 				INFOPLIST_FILE = DateTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DateTools;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		908837DD1B637C240063096B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -643,14 +714,75 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = DateTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DateTools;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		917A66C31BBB00AF00AD1549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DateTools/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = DateTools;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		917A66C41BBB00AF00AD1549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DateTools/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = DateTools;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -672,6 +804,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -733,6 +866,7 @@
 				GCC_PREFIX_HEADER = "DateToolsExample/DateToolsExample-Prefix.pch";
 				INFOPLIST_FILE = "DateToolsExample/DateToolsExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattyork.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -747,6 +881,7 @@
 				GCC_PREFIX_HEADER = "DateToolsExample/DateToolsExample-Prefix.pch";
 				INFOPLIST_FILE = "DateToolsExample/DateToolsExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattyork.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -768,6 +903,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "DateToolsExampleTests/DateToolsExampleTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattyork.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -786,6 +922,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DateToolsExample/DateToolsExample-Prefix.pch";
 				INFOPLIST_FILE = "DateToolsExampleTests/DateToolsExampleTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattyork.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -795,7 +932,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		908837E01B637C240063096B /* Build configuration list for PBXNativeTarget "DateTools" */ = {
+		908837E01B637C240063096B /* Build configuration list for PBXNativeTarget "DateTools-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				908837DC1B637C240063096B /* Debug */,
@@ -803,6 +940,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		917A66C51BBB00AF00AD1549 /* Build configuration list for PBXNativeTarget "DateTools-WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917A66C31BBB00AF00AD1549 /* Debug */,
+				917A66C41BBB00AF00AD1549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		F0F08D9618D9E80E00214C6B /* Build configuration list for PBXProject "DateToolsExample" */ = {
 			isa = XCConfigurationList;
