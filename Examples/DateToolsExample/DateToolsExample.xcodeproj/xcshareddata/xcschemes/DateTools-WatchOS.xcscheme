@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "917A66BD1BBB00AF00AD1549"
-               BuildableName = "DateTools-WatchOS.framework"
+               BuildableName = "DateTools.framework"
                BlueprintName = "DateTools-WatchOS"
                ReferencedContainer = "container:DateToolsExample.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "917A66BD1BBB00AF00AD1549"
-            BuildableName = "DateTools-WatchOS.framework"
+            BuildableName = "DateTools.framework"
             BlueprintName = "DateTools-WatchOS"
             ReferencedContainer = "container:DateToolsExample.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "917A66BD1BBB00AF00AD1549"
-            BuildableName = "DateTools-WatchOS.framework"
+            BuildableName = "DateTools.framework"
             BlueprintName = "DateTools-WatchOS"
             ReferencedContainer = "container:DateToolsExample.xcodeproj">
          </BuildableReference>
